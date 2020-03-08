@@ -35,6 +35,8 @@ public class Constants {
 	    //username of the tester to attach to our reports
 	    public static final String PC_USER= System.getProperty("user.name");
 	    
+	   
+	    
 	    public static final String SCREENSHOTS_PATH = System.getProperty("user.dir")+ "/target/screenShots/";
 	   //path for connection 
 	    public static final String JDBC_FILEPATH= System.getProperty("user.dir")+"/src/test/resources/configs/Configuration.properties";
