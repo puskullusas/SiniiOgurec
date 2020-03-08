@@ -1,0 +1,304 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-02-08T01:57:25.118Z",
+        "before": [
+          {
+            "result": {
+              "duration": 568000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.start(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Test1",
+        "description": "",
+        "id": "test;test1",
+        "after": [
+          {
+            "result": {
+              "duration": 4600,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.end(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 37300,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I do some step",
+            "match": {
+              "location": "TestStesp.i_do_some_step()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6400,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I do another step",
+            "match": {
+              "location": "TestStesp.i_do_another_step(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "a",
+                  "b"
+                ]
+              },
+              {
+                "cells": [
+                  "c",
+                  "d"
+                ]
+              },
+              {
+                "cells": [
+                  "e",
+                  "f"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I validate the outcomes",
+            "match": {
+              "location": "TestStesp.i_validate_the_outcomes(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Header1",
+                  "Header2",
+                  "Header3"
+                ]
+              },
+              {
+                "cells": [
+                  "Data 1.1",
+                  "Data 1.2",
+                  "Data 1.3"
+                ]
+              },
+              {
+                "cells": [
+                  "Data 2.1",
+                  "Data 2.2",
+                  "Data 2.3"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-08T01:57:25.127Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.start(Scenario)"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Title of your scenario outline",
+        "description": "",
+        "id": "test;title-of-your-scenario-outline;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 8100,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.end(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7900,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I check for the 5 in step",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 16
+                }
+              ],
+              "location": "TestStesp.i_check_for_the_in_step(Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10100,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I verify the 5  and \"success\" in step",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 13
+                },
+                {
+                  "val": "\"success\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TestStesp.i_verify_the_and_in_step_if_we_use_quotes_it_will_see_it_as_a_string(Integer,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-08T01:57:25.128Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8500,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.start(Scenario)"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Title of your scenario outline",
+        "description": "",
+        "id": "test;title-of-your-scenario-outline;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5900,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.end(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7800,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I check for the 7 in step",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 16
+                }
+              ],
+              "location": "TestStesp.i_check_for_the_in_step(Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7500,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I verify the 7  and \"Fail\" in step",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 13
+                },
+                {
+                  "val": "\"Fail\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TestStesp.i_verify_the_and_in_step_if_we_use_quotes_it_will_see_it_as_a_string(Integer,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "Test",
+    "description": "",
+    "id": "test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/test.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
