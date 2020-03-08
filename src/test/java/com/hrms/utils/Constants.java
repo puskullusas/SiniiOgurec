@@ -41,7 +41,7 @@ public class Constants {
 	   //path for connection 
 	    public static final String JDBC_FILEPATH= System.getProperty("user.dir")+"/src/test/resources/configs/Configuration.properties";
 		
-	    
+	    //don't forget
 	    //password and username can be stored here too, if you don't want anybody to see it, you can use git ignore on this file when you push
 //	    public static final String USERNAME = "Admin";
 //	    public static final String PASSWORD = "Syntax@123";
