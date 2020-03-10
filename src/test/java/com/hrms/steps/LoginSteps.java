@@ -23,8 +23,9 @@ public class LoginSteps extends CommonMethods {
 	@When("I enter valid username and valid password")
 	public void i_enter_valid_username_and_valid_password() {
 	   loggin=new LoginPage();
+	   
 	   sendText(loggin.username,"Admin");
-	   sendText(loggin.password, "Syntax@123");
+	   sendText(loggin.password, "Hum@nhrm123");
 	}
 
 	@When("I click on login button")
@@ -48,18 +49,18 @@ public class LoginSteps extends CommonMethods {
 		
 	}
 
-	@When("I enter valid username and invalid password")
-	public void i_enter_valid_username_and_invalid_password() {
-		loggin = new LoginPage();
-			sendText(loggin.username,"Admin");
-		   sendText(loggin.password, "Syntax");
-	}
-
-	@Then("I see error message")
-	public void i_see_error_message() {
-	    boolean error = loggin.errorMsg.isDisplayed();
-	    Assert.assertTrue("Error message is not displayed", error);
-	    System.out.println("You entered invalid Credentials!");
-	    System.out.println("This is the message displayed:-> " +loggin.errorMsg.getText());
-	}
+//	@When("I enter valid username and invalid password")
+//	public void i_enter_valid_username_and_invalid_password() {
+//		loggin = new LoginPage();
+//			sendText(loggin.username,"Admin");
+//		   sendText(loggin.password, "Syntax");
+//	}
+//
+//	@Then("I see error message")
+//	public void i_see_error_message() {
+//	    boolean error = loggin.errorMsg.isDisplayed();
+//	    Assert.assertTrue("Error message is not displayed", error);
+//	    System.out.println("You entered invalid Credentials!");
+//	    System.out.println("This is the message displayed:-> " +loggin.errorMsg.getText());
+//	}
 }

@@ -5,7 +5,7 @@
 	<groupId>com.syntax.cucumber</groupId>
 	<artifactId>cucumberProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HRMSCucumber FrameWork</name>
+	<name>HRMScucumberProject</name>
 
 	<properties> <!-- TO UPDATE JAVA JRE LIBS VERSION IF LOWER:) -->
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -104,14 +104,14 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>HrmsCucumberFramework</projectName>
+							<projectName>cucumberProject</projectName>
 							<!-- output directory for the generated report -->
 							<outputDirectory>${project.build.directory}</outputDirectory>
 							<!-- optional, defaults to outputDirectory if not specified -->
 							<inputDirectory>${project.build.directory}</inputDirectory>
 							<jsonFiles>
 								<!-- supports wildcard or name pattern -->
-								<param>**/*.json</param>
+								<param>**/cucumber.json</param>
 							</jsonFiles>
 						</configuration>
 					</execution>

@@ -11,7 +11,7 @@ public class Hooks extends CommonMethods {
 	@Before
 	public void start(Scenario scenario) {
 		System.out.println("Starting scenario " + scenario.getName());
-		setUp();
+		setUp();//in base class
 		
 	}
 

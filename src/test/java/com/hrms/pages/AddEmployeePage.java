@@ -17,9 +17,10 @@ public WebElement middleName;
 //first name window
 @FindBy(id ="firstName")
 public WebElement empFName;
+
 //save button
 @FindBy(id="btnSave")
-	public WebElement btnSave;
+public WebElement btnSave;
 //employee Id
 @FindBy(id = "employeeId")
 public WebElement empId;

@@ -108,8 +108,8 @@ public class AddEmplStepsAsel extends CommonMethods {
 			click(pdetails.edit_saveBtn);
 						//passing new details to the employee
 			sendText(pDetails.licence, map.get("DriverLisence"));
-			sendText(pDetails.ssn, map.get("SSN"));
-			sendText(pDetails.sin, map.get("SIN"));
+			//sendText(pDetails.ssn, map.get("SSN"));
+			//sendText(pDetails.sin, map.get("SIN"));
 			clickRadio(pdetails.genderLabels, map.get("Gender"));
 //			selectDdValue(pdetails.maritalStatus, map.get("MaritalStatus"));
 //			selectDdValue(pdetails.nationality, map.get("Nationality"));
